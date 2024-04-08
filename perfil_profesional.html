@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil profesional</title>
+    <link rel="stylesheet" href="estilos_css/estilos_perfilProfesional.css">
+</head>
+<body>
+     <!--Mediante el div, creamos un bloque divisorio del tamaño indicado en los estilos en el que le meteremos las demás etiquetas, algunas también dentro de un div-->
+     <div id="div_perfilProfesional">
+        <!--La etiqueta "u" subraya el texto seleccionado de H1 (etiqueta de encabezado)-->
+        <h1 id="h1_perfilProfesional"><u>PERFIL PROFESIONAL</u></h1>
+        <P id="p_perfilProfesional">Técnica en desarrollo de aplicaciones multiplataforma con excelentes habilidades y conocimientos sobre diseño de aplicaciones, páginas web y bases de datos. Más de 5 años de experiencia brindando mis servicios profesionales a empresas de tecnología. Gracias a mis conocimientos he logrado realizar 8 aplicaciones para Android. Busco poner en práctica mis habilidades para asegurame de que obtengo los mejores futuros resultados de trabajo.</P>
+        <!--Aquí colocamos el menú de navegación para las diferentes páginas relacionadas con el curriculum-->
+        <nav>
+            <a href="index.html">Datos personales</a>
+            <a href="perfil_profesional.html">Perfil profesional</a>
+            <a href="formación_académica.html">Formación académica</a>
+            <a href="formacion_complementaria.html">Formación complementaria</a>
+            <a href="experiencia_laboral.html">Experiencia laboral</a>
+            <a href="competencias_habilidades.html">Competencias y habilidades</a>
+        </nav>
+        <!--Imagen-->
+        <img src="imagenes/programasAprendidos.jpeg" id="img_programasAprendidos" title="Programas aprendidos"alt="Programas aprendidos" usemap="#programas-map">
+        <!--Mediante "map" crearemos un enlace externo al colocar el cursor sobre los diferentes objetos de la imagen y haciendo click en alguno de ellos-->
+        <map name="programas-map">
+            <area target="_blank" alt="WampServer" title="WampServer" href="https://www.wampserver.com/en/download-wampserver-64bits/" coords="10,95,58,145" shape="rect">
+            <area target="_blank" alt="Eclipse" title="Eclipse" href="https://eclipse-sdk.softonic.com/" coords="33,68,23" shape="circle">
+            <area target="_blank" alt="Android Studio" title="Android Studio" href="https://developer.android.com/codelabs/basic-android-kotlin-compose-install-android-studio?hl=es-419#0" coords="84,37,33" shape="circle">
+            <area target="_blank" alt="Oracle VM VirtualBox" title="Oracle VM VirtualBox" href="https://www.virtualbox.org/" coords="135,89,164,74,188,88,192,124,167,154,140,126" shape="poly">
+            <area target="_blank" alt="Wordpress" title="Wordpress" href="https://es.wordpress.org/download/" coords="145,61,27" shape="circle">
+            <area target="_blank" alt="Visual Studio Code" title="Visual Studio Code" href="https://code.visualstudio.com/" coords="106,159,111,154,120,161,140,143,152,146,151,191,142,194,123,178,112,185,105,180" shape="poly">
+            <area target="_blank" alt="Notepad++" title="Notepad++" href="https://notepad-plus-plus.org/downloads/" coords="61,159,61,64,116,60,130,89,134,141,121,154,104,157,82,165" shape="poly">
+        </map>
+        <div id="div_programasAprendidos">
+            <h2 id="h2_programasAprendidos">PROGRAMAS APRENDIDOS</h2>
+            <!--Creamos lista ordenada mediante "ol" y ponemos en cursiva el texto con "i"-->
+            <ol id="lista_programas" >
+                <li><i>Android Studio</i></li>
+                <li><i>Notepad+</i></li>
+                <li><i>Wordpress</i></li>
+                <li><i>Eclipse</i></li>
+                <li><i>Visual Studio code</i></li>
+                <li><i>Oracle VM</i></li>
+                <li><i>WampServer</i></li>
+            </ol>
+            <!--Ponemos una explicación para interactuar con la imagen-->
+            <p id="p_explicacion">Al pasar el cursor sobre la imagen y haciendo click en los diferentes logos, accederás mediante un link a un enlace externo a la página oficial de descarga de cada uno.</p>
+        </div>
+        <!--Creamos una etiqueta de pie de página con un botón que, al hacer click y mediante un link, te permite mandar un email -->
+        <footer id="footer_link"><a id="link_email" href="mailto:irinalopezpicon24@hotmail.com">Enviar email</a></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formación académica</title>
+    <link rel="stylesheet" href="estilos_css/estilos_formacionAcademica.css">
+</head>
+<body>
+    <!--Mediante el div, creamos un bloque divisorio del tamaño indicado en los estilos en el que le meteremos las demás etiquetas, algunas también dentro de un div-->
+    <div id="div_formAcademica">
+       <!--La etiqueta "u" subraya el texto seleccionado de H1 (etiqueta de encabezado)-->
+       <h1 id="h1_formAcademica"><u>FORMACIÓN ACADÉMICA</u></h1>
+       <P id="p_formAcademica">A lo largo de los años me he ido formando para obtener los resultados que, a día de hoy, conforman mi experiencia en el mundo de la informática. Aunque ya me he decantado por una rama, diseño web y aplicaciones multiplataforma, pienso que todavía me queda mucho por aprender. Dicho aprendizaje me lo da la experiencia laboral en las empresas en las que he trabajado o pueda llegar a trabajar. </P>
+       <P id="p_formAcademica">Actualmente estoy cursando para obtener un certificado profesisonal de desarrollo de aplicaciones con tecnologías web en la Academia Postal, Ourense. Esto me da la posibilidad de acceder al FP Superior de DAW (Desarrollo de Aplicaciones Web) y adquirir el título en el menor tiempo posible, de esta manera complementaría el FP que ya poseo de DAM (Desarrollo de Aplicaciones Multiplataforma), que he cursado en la Academia Tesdai, Santiago de Compostela.</P>
+       <!--Aquí colocamos el menú de navegación para las diferentes páginas relacionadas con el curriculum-->
+       <nav>
+           <a href="index.html">Datos personales</a>
+           <a href="perfil_profesional.html">Perfil profesional</a>
+           <a href="formación_académica.html">Formación académica</a>
+           <a href="formacion_complementaria.html">Formación complementaria</a>
+           <a href="experiencia_laboral.html">Experiencia laboral</a>
+           <a href="competencias_habilidades.html">Competencias y habilidades</a>
+       </nav>
+       <!--Imagen con un ancho de 300, por eso no viene indicado en los estilos-->
+       <img src="imagenes/centrosAcademicos.jpg" id="img_formAcademica" title="Centros educativos"alt="Centros educativos" usemap="#centros-map">
+       <!--Mediante "map" crearemos un enlace externo al colocar el cursor sobre los diferentes objetos de la imagen y haciendo click en alguno de ellos-->
+       <map name="centros-map">
+            <area target="_blank" alt="CEIP PIO XII" title="CEIP PIO XII" href="https://www.edu.xunta.gal/centros/ceippio12/" coords="135,121,2,1" shape="rect">
+            <area target="_blank" alt="Academia Tesdai" title="Academia Tesdai" href="https://tesdai.com/" coords="70,190,70" shape="circle">
+            <area target="_blank" alt="Academia Postal - Ourense" title="Academia Postal - Ourense" href="https://www.academiapostal.es/centros/ourense/" coords="142,148,295,258" shape="rect">
+            <area target="_blank" alt="IES Plurilingüe Rosalía de Castro" title="IES Plurilingüe Rosalía de Castro" href="https://iesrosalia.gal/" coords="138,2,297,1,299,146,141,145" shape="poly">
+       </map>
+       <div id="div_centrosEducativos">
+           <h2 id="h2_formAcademica">CENTROS EDUCATIVOS</h2>
+           <table id="tabla_centros" >
+               <tr>
+                <th>CENTROS</th>
+                <th>FECHA</th>
+               </tr>
+               <tr>
+                <td><i>CEIP PIO XII</i></td>
+                <td>2001-2010</td>
+               </tr>
+               <tr>
+                <td><i>IES Plurilingüe Rosalía de Castro</i></td>
+                <td>2010-2017</td>
+               </tr>
+               <tr>
+                <td><i>Centro Formación Profesional Tesdai</i></td>
+                <td>2017-2019</td>
+               </tr>
+               <tr>
+                <td><i>Academia Postal</i></td>
+                <td>2024(Actualidad)</td>
+               </tr>
+           </table>
+           <h2 id="h2_idiomas">IDIOMAS</h2>
+            <!--Con "ul" creamos una lista no ordenada y con "i" ponemos en cursiva el texto-->
+            <ul id="ul_idiomas">
+                <li><i>Castellano</i></li>
+                <li><i>Gallego</i></li>
+                <li><i>Inglés B1 (Bachillerato)</i></li>
+                <li><i>Portugués (Bachillerato)</i></li>
+                <li><i>Francés (ESO)</i></li>
+            </ul>
+       </div>
+       <!--Explicación de como se interactua con la imagen-->
+       <p id="p_exFormAc">Si necesita información acerca de los centros, anteriormente nombrados, puede acceder a un enlace de cada centro educativo si hace click encima de la fotografía de su interés.</p>
+       <!--Creamos una etiqueta de pie de página con un botón que, al hacer click y mediante un link, te permite mandar un email -->
+       <footer id="footer_link"><a id="link_email" href="mailto:irinalopezpicon24@hotmail.com">Enviar email</a></footer>
+   </div>
+</body>
+</html>
